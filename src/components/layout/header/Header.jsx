@@ -10,6 +10,7 @@ import "./header.scss";
 import HoverImage from "../../hoverImg/HoverImg";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
+import logo from "../../../assets/images/logo.png";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -25,8 +26,8 @@ const Header = () => {
         <div className="header__top__right">
           <div className="header__top__call__center">
             <IoCall />
-            <a href="tel: +998900331155">
-              <span>Телефон поддержки</span> +998900331155
+            <a href="tel: +998937714320">
+              <span>Телефон поддержки</span> +99893-771-43-20
             </a>
           </div>
           <div className="header__top__icons">
@@ -46,7 +47,9 @@ const Header = () => {
       <header className="header">
         <div className="header__logo">
           <Link>
-            <h2>Jac</h2>
+            <h2>
+              <img width={65} height={18} src={logo} alt="" />
+            </h2>
           </Link>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
