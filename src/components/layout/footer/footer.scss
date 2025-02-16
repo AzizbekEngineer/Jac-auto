@@ -1,0 +1,138 @@
+.footer {
+    &__top {
+        background: black;
+        color: white;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 120px;
+        align-items: flex-start;
+        padding: 60px 0;
+    }
+
+    &__middle {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 120px;
+        align-items: flex-start;
+    }
+
+    &__img {
+        width: 180px;
+        height: 120px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__item__top {
+        padding: 8px 0;
+        color: #EBEEF3;
+        font-family: "Source Sans Pro", Sans-serif;
+        font-size: 17px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+    }
+
+    &__item {
+        color: white;
+        transition: color 0.3s;
+        font-size: 18px;
+    }
+
+    &__link {
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        gap: 10px;
+        transition: .4s;
+
+        &:hover {
+            color: orange;
+        }
+    }
+
+    &__bottom {
+        padding: 60px 0;
+        background: black;
+    }
+
+    &__bottom__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__bottom__left {
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: white;
+
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        transition: 0.4s;
+
+        &:hover {
+            color: white;
+            background: black;
+
+        }
+    }
+
+    @media (max-width:1335px) {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 100%;
+        }
+
+    }
+
+    @media (max-width:900px) {
+        &__middle {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    }
+
+    @media (max-width:570px) {
+        &__middle {
+            grid-template-columns: 1fr;
+        }
+    }
+}
